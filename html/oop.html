@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read</title>
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+
+
+<body>
+    <h2>Choose something to read to get started</h2>
+    <h2>Click the words you don't understand to add them to your vocab list</h2>
+    <div class="add-remove-container">
+        <button onclick="addBook()">Add Book</button> <button onclick="removeBook()">Remove Book</button>
+    </div>
+    
+    
+    <div class="book-container">
+        <button class="book" id="perdida"onclick="showPage('../texts/perdida.txt')"><img src="../images/perdida.webp"></button>
+        <button class="book" id="perder_el_equilibrio" onclick="showPage('../texts/perder_el_equilibrio.txt')"><img src="../images/perder_el_equilibrio.jpg"></button>
+        <button class="book" id="el_alquimista" onclick="showPage('../texts/el_alquimista.txt')"><img src="../images/el_alquimista.jpg"></button>
+        <button class="book" id="narnia" onclick="showPage('../texts/narnia.txt')"><img src="../images/narnia.jpg"></button>
+    </div>
+    
+    <div id="read-button-container">
+        <button class="yn-button" id="prev-page-button" onclick= myLibrary.active_book.page_backward() style="border: 1px solid white;">Previous Page</button>
+        <button class="yn-button" id="next-page-button" onclick= myLibrary.active_book.page_forward() style="border: 1px solid white;">Next Page</button> <br>
+        <div id="page-display"></div>
+    </div>
+
+    <div id="book-text-container">
+        
+        
+    </div>
+
+    <script src="../js/oop.js"></script>
+    <script src="../js/library.js"></script>
+</body>
+</html>
