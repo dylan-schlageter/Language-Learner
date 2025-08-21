@@ -20,7 +20,7 @@ Uses the language learning theory of "comprehensible input" (consuming lots of c
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the app: <br/>
+Launch the app -> Select Book -> Click words to get definition and add them to your vocab list: <br/>
 <img width="80%" height="80%" alt="image" src="https://github.com/user-attachments/assets/a879663d-0bcf-436a-af7c-d1b86a054289" />
 
 
